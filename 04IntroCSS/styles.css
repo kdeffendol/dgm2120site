@@ -1,0 +1,39 @@
+body {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    background-color: lightgray;
+}
+.navbar {
+    background-color: #7F0700; /*change later to actual color scheme*/
+    color: white;
+    padding: 5px;
+    border-style: outset;
+    border-color: #7F2B26;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+footer {
+    background-color: #7F0700;
+    color: white;
+    padding: 5px;
+}
+.navbar a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #7F0700;
+    padding: 5px;
+}
+h1 {
+    font-family: sans-serif; /*import google font to use*/
+}
+/* add active class to know which page user is on*/
