@@ -37,3 +37,10 @@ h1 {
     font-family: sans-serif; /*import google font to use*/
 }
 /* add active class to know which page user is on*/
+
+/*definition list*/
+dl dt {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+}
