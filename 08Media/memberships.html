@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>S2 Sports</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
+  </head>
+
+  <body>
+    <div id="wrapper">
+    <!--HEADER------------------------------------------------------------------>
+    <header>
+        <h1>s2 sports</h1>
+        <h2>bringing the pro experience to everyone</h2>
+      </header>
+    <div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="calendar.html">calendar</a></li>
+          <li class="active"><a href="memberships.html">memberships</a></li>
+          <li><a href="images.html">gallery</a></li>
+          <li><a href="location.html">visit</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--MAIN-------------------------------------------------------------------->
+    <div>
+      <form action="FormToEmail.php" method="POST" enctype="multipart/form-data">
+        <fieldset>
+          <legend>General Information:</legend>
+          <label for="fullname">Full Name:</label> <input id="fullname" type="text" name="fullname" required><br>
+          Email: <input type="email" name="email" required><br>
+          Date of birth: <input type="date" name="dob" required><br>
+          Phone number: <input type="tel" name="phone" pattern="[0-9]{10}" ><br> <!--pattern attribute here-->
+          Gender: <br>
+          <input type="radio" name="gender" value="Male" id="gender-male"><label for="gender-male">Male</label><br>
+          <input type="radio" name="gender" value="Female"><label for="gender-female">Female</label><br>
+          <input type="radio" name="gender" value="Other"><label for="gender-other">Other</label><br>
+          Are you a student?<br>
+          <select> <!--select box-->
+            <option>High school</option>
+            <option>Collegiate</option>
+            <option>Under high school level</option>
+            <option>Not a student</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Interests</legend>
+          What interested you the most about our facility? <br>
+          <input type="checkbox" name="interests[]">Classes<br>
+          <input type="checkbox" name="interests[]">Weight Room<br>
+          <input type="checkbox" name="interests[]">Other<br>
+          If other, explain: <input type="text"><br>
+        </fieldset>
+        <fieldset>
+          <legend>Extra</legend>
+          Comments or suggestions? <br>
+          <textarea name="comments"></textarea>
+        </fieldset>
+        <input type="hidden" name="subject" value="input">
+        <input type="hidden" name="redirect" value="thanks.html"> <!--add email redirect here-->
+        <input type="submit" name="submit" value="Submit" id="submit-button">
+      </form>
+    </div>
+
+    <!--FOOTER-->
+    <br>
+    </div>
+    <footer class="footer">copyright oct 2018 | kelsey deffendol | &copy;</footer>
+</body>

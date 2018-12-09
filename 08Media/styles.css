@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: #793632;
+    background-image: url(assets/background.png);
+    background-repeat: repeat-x;
+}
+header {
+    background-image: url(assets/logo.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 70px;
+    margin: 5px;
+}
+footer {
+    background-color: #7F0700;
+    color: white;
+    padding: 5px;
+    max-width: 990px;
+    margin: 0 auto;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: gray;
+}
+h1 {
+    font-family: sans-serif; /*import google font to use*/
+}
+#wrapper h1 {
+    text-shadow: 1px 1px gray;
+}
+/*definition list*/
+dl dt {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+}
+ul li {
+    padding: 5px;
+    margin: 0px;    
+}
+.footer {
+    font-size: 10px;
+    text-align: center; 
+    width: 100%;
+    clear: both;
+}
+.link-list {
+    color: black;
+    list-style-type: none;
+    list-style-image: url(assets/bullet-arrow.gif);
+}
+.link-list li a {
+    color: black;
+}
+ol {
+    list-style-type: upper-roman;
+}
+.active {
+    border: solid lightgray 2px;
+}
+
+
+/*-----IMAGES-----*/
+.img-gallery {
+    margin: 15px;
+    padding: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img-gallery img {
+    width: 200px;
+}
+.img-gallery figcaption {
+    font-size: 14px;
+    padding: 3px;
+}
+.img-gallery figure {
+    width: 200px;
+}
+figure {
+    margin: 5px;
+    border: solid black 1px;
+}
+.front-img {
+    float: right;
+    width: 35%;
+}
+.front-img img {
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+/*-----MEDIA-----*/
+#brochure-link {
+    text-decoration: underline;
+}
+.map-frame {
+    width: 100%;
+    height: 20rem;
+    padding: 10px 0px 10px 0px;
+    border: 1px solid black;
+}
+.video {
+    width: 100%;
+    height: 20rem;
+    border: 1px solid black;
+}
+audio {
+    margin: 5px;
+}
+
+/*------FORM------*/
+#submit-button {
+    border: solid 1px white;
+    padding: 5px;
+    background-color: #7F0700;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+}
+input {
+    text-align: left;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+fieldset {
+    border: solid black 1px;
+    border-radius: 12px;
+    margin: 5px;
+}
+
+
+#wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: lightgray;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 0px;
+    background: linear-gradient(lightgray, white);
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+
+/*-----PHONE VS DESKTOP-----*/
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: .5rem 2%;
+    }
+    nav ul {
+        list-style-type: none;
+        padding:0;
+    }
+    nav ul li {
+        border: solid 1px black;
+        display: block;
+        padding: .5rem 2%;
+        background-color: #7F0700;
+        border-radius: 10px;
+        margin: 2px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        font-weight: 600;
+    }
+    nav ul li.active {
+        background-color: black;
+        color: white;
+
+    }
+}
+@media only screen and (min-width:601px) {
+    .navbar a:link {
+        text-decoration: none;
+        color: white;
+    }
+    .navbar { /*add logo later*/
+        background-color: #7F0700;
+        color: rgb(255,255,255);
+        padding: 5px;
+        border-color: #7F2B26;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .navbar ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+    }    
+}
+
+
+/* -------TABLE STYLES-------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0px 10px 0px;
+}
+table, th, td {
+    border: solid 1px black;
+    padding: 5px;
+}
+#schedule tr:nth-child(even) {
+    background-color: #c4c4c4;
+}
+#schedule tr:hover {
+    background-color: #3d3d3d;
+    color: white;
+}
+th {
+    font-size: 16px;
+}
